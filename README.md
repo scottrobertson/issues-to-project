@@ -1,6 +1,6 @@
 # Issues to Project
 
-Bulk add labeled issues to a Project.
+Bulk add labeled issues to a GitHub Project.
 
 Pass in the following arguments: github org, github repo, project number, label to match.
 
