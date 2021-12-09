@@ -2,11 +2,11 @@ const { Octokit, App } = require("octokit");
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
-const limit = 1;
 const org = process.argv[2];
 const repo = process.argv[3];
 const projectNumber = process.argv[4];
 const label = process.argv[5];
+const limit = process.argv[6] || 30;
 
 async function run() {
   if (!org) {
